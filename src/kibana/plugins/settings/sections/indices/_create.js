@@ -221,7 +221,7 @@ define(function (require) {
         if (fields.length > 0) {
           fetchFieldsError = null;
           dateFields = fields.filter(function (field) {
-            return field.type === 'date';
+            return field.type === 'date' || field.type === 'number';
           });
         }
 
